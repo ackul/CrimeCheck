@@ -1,4 +1,4 @@
-![alt tag](https://raw.github.com/achinkulshrestha/CrimeCheck/master/crimecheck.png)
+![alt tag](https://raw.github.com/achinkulshrestha/CrimeCheck/master/img/crimecheck.png)
 ==========
 
 Compression Ratio Info-leak Made Easy (CRIME) is a security exploit published in 2012 against TLS Compression. When used to recover the content of secret authentication cookies, over connections using the HTTPS and SPDY protocols that also use data compression, it allows an attacker to perform session hijacking on an authenticated web session. 
