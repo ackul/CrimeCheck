@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-CrimeCheck - A Tool to check if the server is vulnerable to the Crime/Breach Attack
+CrimeCheck - A Tool to check if the server is vulnerable to Compression Based Attacks(BREACH/CRIME)
 usage: PROGRAM [options] <...>
   -v  Verbose logging
   -l log_file Log output to logfile
