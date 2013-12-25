@@ -9,8 +9,9 @@ The BREACH attack is an instance of the CRIME attack against HTTP compression - 
 
 CRIME CHECK is a tool to detect if the server has TLS or HTTP Compression Enabled and thus vulnerable to these attacks. 
 
-BASIC USAGE:
+## Basic Usage
 ==========
+```
 CrimeCheck - A Tool to check if the server is vulnerable to Compression Based Attacks(BREACH/CRIME)
 usage: PROGRAM [options] <...>
   -v  Verbose logging
@@ -18,21 +19,18 @@ usage: PROGRAM [options] <...>
   -s  Server URL
   -p  Pcap File (Live Capture is not supported currently) 
 Copyright (C) 2013 Achin K, mail: achinkul@gmail.com
+```
 
-CHECKING HTTP COMPRESSION (BREACH/CRIME ATTACK)
-==========
+## Checking HTTP Compression (BREACH/CRIME Attack)
 `crimecheck.py -s <SERVER-DOMAIN>`
 
-CHECKING TLS COMPRESSION (CRIME ATTACK)
-==========
+## Checking TLS Compression (CRIME ATTACK)
 `crimecheck.py -s <SERVER-DOMAIN> -p <PCAP-FILE>`
 
-VERBOSE
-==========
+## Verbose
 `crimecheck.py -v -s <SERVER-DOMAIN> -p <PCAP-FILE>`
 
-EXAMPLE
-==========
+## Example
 `crimecheck.py -v -s facebook.com -p sample.pcap`
 
 NOTE: The Tool doesn't support live capture, for that purpose please use [pypcap](https://code.google.com/p/pypcap/). The Tool is compatible with Python 2.7
