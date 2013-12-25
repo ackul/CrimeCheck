@@ -30,6 +30,7 @@ def sendRequest(serverAddr):
     req.add_header('Accept-Encoding', 'gzip,deflate')
     resp = urllib2.urlopen(req)
     content = resp.read()
+    logger.debug("%s", resp.info())
     return resp.info().getheader('Content-Encoding')
 
 def checkIfVulnerable(respCode,serverAddr):
@@ -94,6 +95,7 @@ def gather_statistics(cap,serverAddr):
             continue
 
         for record in records:
+            logger.debug("%s", record)
             # TLS handshake only
             if record.type != 22:
                 continue
