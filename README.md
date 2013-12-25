@@ -21,21 +21,21 @@ Copyright (C) 2013 Achin K, mail: achinkul@gmail.com
 
 CHECKING HTTP COMPRESSION (BREACH/CRIME ATTACK)
 ==========
-crimecheck.py -s <SERVER-DOMAIN>
+`crimecheck.py -s <SERVER-DOMAIN>`
 
 CHECKING TLS COMPRESSION (CRIME ATTACK)
 ==========
-crimecheck.py -s <SERVER-DOMAIN> -p <PCAP-FILE>
+`crimecheck.py -s <SERVER-DOMAIN> -p <PCAP-FILE>`
 
 VERBOSE
 ==========
-crimecheck.py -v -s <SERVER-DOMAIN> -p <PCAP-FILE>
+`crimecheck.py -v -s <SERVER-DOMAIN> -p <PCAP-FILE>`
 
 EXAMPLE
 ==========
-crimecheck.py -v -s facebook.com -p sample.pcap
+`crimecheck.py -v -s facebook.com -p sample.pcap`
 
-NOTE: The Tool doesn't support live capture, for that purpose please use pypcap(https://code.google.com/p/pypcap/). The Tool is compatible with Python 2.7
+NOTE: The Tool doesn't support live capture, for that purpose please use [pypcap](https://code.google.com/p/pypcap/). The Tool is compatible with Python 2.7
 
 
 
