@@ -14,14 +14,18 @@ import logging, getopt
 import os
 import sys
 import socket
+
 p = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'third_party', 'dpkt')
 if p not in sys.path:    
     sys.path.insert(0, p)
+
 import dpkt
 from collections import defaultdict
 
+
 DEBUG = False
 capture=""
+
 def sendRequest(serverAddr):
     req = urllib2.Request("https://"+serverAddr)
     req.add_header('Accept-Encoding', 'gzip,deflate')
@@ -170,8 +174,7 @@ if __name__ == '__main__':
     logger.addHandler(handler)
     if (fileHandler is not None):
         fileHandler.setFormatter(formatter)
-        logger.addHandler(fileHandler)
-    
+        logger.addHandler(fileHandler)    
     
     if serverAddr == "":
         die_usage("Please Enter Server Address")
