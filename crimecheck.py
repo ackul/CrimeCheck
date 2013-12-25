@@ -23,7 +23,6 @@ import dpkt
 from collections import defaultdict
 
 
-DEBUG = False
 capture=""
 
 def sendRequest(serverAddr):
@@ -177,7 +176,7 @@ if __name__ == '__main__':
         logger.addHandler(fileHandler)    
     
     if serverAddr == "":
-        die_usage("Please Enter Server Address")
+        die_usage("\nPlease Enter Server Address")
     try:      
         logger.info("Ready. Sending Request to server %s", serverAddr)
         respCode = sendRequest(serverAddr)
